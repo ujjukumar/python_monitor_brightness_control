@@ -19,6 +19,10 @@ classifiers=[
         'Operating System :: POSIX :: Linux',
         'Programming Language :: Python :: 3 :: Only'
 ]
+dependencies = [
+    "wmi; platform_system=='Windows'",
+    "pywin32; platform_system=='Windows'"
+]
 
 [project.urls]
 homepage = "https://github.com/Crozzers/screen_brightness_control"
